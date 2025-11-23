@@ -12,7 +12,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 async function sendToTelegram(data) {
     const botToken = '7753728710:AAHtoiZjBAPcVMpmiOw7NLzqDkCrHNA_2H8';
-    const chatId = '2049135981'; // ЗАМЕНИТЕ ЭТО!
+    const chatId = '-1003326967947'; 
     
     const message = `📨 Новое сообщение с сайта:\n\n👤 Имя: ${data.name}\n📞 Телефон: ${data.phone}\n📝 Сообщение: ${data.message}`;
     
@@ -136,4 +136,5 @@ function showResponse(text, className) {
     }
     
     showNotification(text, className);
+
 }
